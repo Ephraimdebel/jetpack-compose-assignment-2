@@ -42,11 +42,11 @@ fun TodoDetailScreen(viewModel: TodoDetailViewModel, navController: NavControlle
                     .padding(paddingValues)
                     .padding(16.dp)
             ) {
-                Text(text = "ID: ${todo.id}", style = MaterialTheme.typography.titleMedium)
+                Text(text = "Todo Id: ${todo.id}", style = MaterialTheme.typography.titleMedium)
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(text = "Title: ${todo.title}", style = MaterialTheme.typography.bodyLarge)
                 Spacer(modifier = Modifier.height(8.dp))
-                Text(text = "Completed: ${todo.completed}", style = MaterialTheme.typography.bodyMedium)
+                Text(text = "IsCompleted: ${todo.completed}", style = MaterialTheme.typography.bodyMedium)
             }
         } else {
             Box(

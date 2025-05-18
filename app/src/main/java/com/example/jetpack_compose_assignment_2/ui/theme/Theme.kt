@@ -1,3 +1,4 @@
+// Theme.kt
 package com.example.jetpack_compose_assignment_2.ui.theme
 
 import androidx.compose.material3.MaterialTheme
@@ -7,9 +8,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 private val LightColors = lightColorScheme(
-    primary = BrandGreen,
-    secondary = BrandGreen,
-    background = Color(0xFFF5F5F5),
+    primary = BrandBlue,
+    secondary = BrandBlue,
+    background = WhiteSmoke,       // softer white background
     surface = Color.White,
     onPrimary = Color.White,
     onSecondary = Color.White,
@@ -18,12 +19,12 @@ private val LightColors = lightColorScheme(
 )
 
 private val DarkColors = darkColorScheme(
-    primary = BrandGreen,
-    secondary = BrandGreen,
+    primary = BrandBlue,
+    secondary = BrandBlue,
     background = Color(0xFF121212),
     surface = Color(0xFF1E1E1E),
-    onPrimary = Color.Black,
-    onSecondary = Color.Black,
+    onPrimary = Color.White,
+    onSecondary = Color.White,
     onBackground = Color.White,
     onSurface = Color.White,
 )

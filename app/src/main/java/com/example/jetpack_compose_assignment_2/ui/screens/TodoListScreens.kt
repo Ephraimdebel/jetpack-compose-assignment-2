@@ -39,18 +39,21 @@ fun TodoListScreen(viewModel: TodoListViewModel, navController: NavController) {
                         .clickable {
                             navController.navigate("detail/${todo.id}")
                         },
-                    elevation = CardDefaults.cardElevation(4.dp)
+                    elevation = CardDefaults.cardElevation(4.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.surface // or any custom Color
+                    )
                 ) {
                     Column(modifier = Modifier.padding(16.dp)) {
                         Text(text = todo.title, style = MaterialTheme.typography.titleMedium)
                         Text(
-                            text = if (todo.completed) "Completed" else "Pending",
+                            text = if (todo.completed) "Status: Completed" else "Status: Pending",
                             color = if (todo.completed) MaterialTheme.colorScheme.primary else Color.Gray
                         )
-
                     }
                 }
+
+            }
             }
         }
     }
-}
